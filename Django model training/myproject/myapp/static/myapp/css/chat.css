@@ -1,0 +1,82 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background for contrast */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Add padding around the body */
+}
+
+/* Main Chat Container */
+#main {
+    background-color: #fff; /* White background for the chat box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the chat box */
+    max-width: 100%; /* Max width for chat box */
+    margin: auto; /* Center the chat box */
+}
+
+/* Button to toggle sidebar */
+button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Form elements styling */
+form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Vertical stacking */
+    margin-top: 15px; /* Margin above the form */
+}
+
+label {
+    margin-bottom: 5px; /* Space below the label */
+}
+
+input[type="text"] {
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the input */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Green for submit button */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Response section styling */
+h2 {
+    margin-top: 20px; /* Space above response header */
+}
+
+p {
+    padding: 10px; /* Padding for the response paragraph */
+    background-color: #e9ecef; /* Light grey background */
+    border-left: 5px solid #007bff; /* Blue left border */
+    border-radius: 4px; /* Rounded corners */
+}

@@ -1,0 +1,35 @@
+/* Set default for the sidebar */
+.side {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #474545;
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: white;
+}
+
+/* Set default for the main content */
+.main {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.main p {
+    margin-top: 5px;
+}
+
+/* Sidebar content */
+.side h2, .side ul {
+    padding: 16px;
+}
+
+.side li {
+    margin-bottom: 10px;
+    background-color:#8a8787 ;
+    border-radius: 20px;
+    padding: 20px;
+}

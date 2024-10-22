@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/css/side_coll.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/chat.css' %}">
+    <title>ChatGPT Chatbot</title>
+</head>
+<body>
+    <!-- Toggle Sidebar Button -->
+    
+
+    <div id="main" class="main">
+        <button onclick="toggleSidebar()">☰</button>
+        <h1>Chat with ChatGPT</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="message">Your Message:</label>
+            <input type="text" id="message" name="message" required>
+            <button type="submit">Send</button>
+        </form>
+
+        <hr>
+
+        {% if response %}
+            <h2>ChatGPT Response:</h2>
+            <p>{{ response }}</p>
+        {% endif %}
+    </div>
+
+    
+    <div id="sidebar" class="side">
+        <h2>Chat History</h2>
+        <ul>
+            {% for chat in chats %}
+                <li><strong>User:</strong> {{ chat.user_message }} <br> <br> <strong>Bot:</strong> {{ chat.bot_response }}</li>
+            {% endfor %}
+        </ul>
+    
+
+
+    <script src="{% static 'myapp/js/side_coll.js' %}"></script>
+</body>
+</html>
+
